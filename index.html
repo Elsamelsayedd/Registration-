@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="system mx-auto text-center my-5 py-4">
+      <div class="system-login" id="systemLogIn">
+        <h1 class="pt-3">Smart Login System</h1>
+        <form>
+          <input
+            id="emailInputLogIn"
+            class="mx-auto my-3 form-control"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            autocomplete="username"
+          />
+          <input
+            id="passwordInputLogIn"
+            class="mx-auto my-3 form-control"
+            type="password"
+            placeholder="Enter your Password"
+            name="password"
+            autocomplete="current-password"
+          />
+          <p class="text-center text-danger d-none" id="inCorrectEmail">
+            incorrect email or password
+          </p>
+
+          <button type="button" id="btnLogIn" class="mx-auto my-4 form-control">
+            Login
+          </button>
+        </form>
+
+        <p class="py-2 no-account">
+          <span
+            >Don’t have an account?
+            <a href="#" id="signUp" class="signUp">Sign Up</a></span
+          >
+        </p>
+      </div>
+
+      <div class="system-login d-none" id="systemSignUp">
+        <h1 class="pt-3">Smart Login System</h1>
+        <form>
+          <input
+            id="nameInput"
+            class="mx-auto my-3 form-control"
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+          />
+          <p class="msg msgName ms-5 d-none" id="msgName">
+            Name must contain at least 2 characters and at most 10 characters
+          </p>
+          <input
+            id="emailInput"
+            class="mx-auto my-3 form-control"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            autocomplete="username"
+          />
+          <p class="msg msgEmail ms-5 d-none" id="msgEmail">
+            The email that you've entered is incorrect.
+          </p>
+          <input
+            id="passwordInput"
+            class="mx-auto my-3 form-control"
+            type="password"
+            placeholder="Enter your Password"
+            name="password"
+            autocomplete="current-password"
+          />
+          <p class="msg msgPassword ms-5 d-none" id="msgPassword">
+            The password that you've entered is incorrect.
+          </p>
+
+          <p class="msgSuccess text-success d-none">success</p>
+          <p class="msgExists text-success d-none">email already exists</p>
+
+          <button
+            type="button"
+            id="btnSignUp"
+            class="mx-auto my-4 form-control"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <p class="py-2 no-account">
+          <span
+            >You have an account?
+            <a href="#" class="signIn" id="signIn">Signin</a></span
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

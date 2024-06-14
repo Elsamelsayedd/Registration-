@@ -1,0 +1,79 @@
+body {
+  background-color: #24353f;
+}
+
+:root {
+  --frist-color: rgb(23, 162, 184);
+
+  --sec-color: white;
+}
+
+.system-login form input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.system {
+  width: 55%;
+  background-color: #24353f;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.form-control {
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.no-account {
+  color: white;
+}
+
+h1 {
+  color: var(--frist-color);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.system-login form input {
+  background-color: transparent;
+  color: var(--sec-color);
+}
+
+.form-control:focus {
+  color: var(--sec-color);
+  background-color: transparent;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+
+.system-login button {
+  border: 1px solid var(--frist-color);
+  background-color: transparent;
+  color: var(--frist-color);
+}
+
+button:hover {
+  background-color: var(--frist-color);
+  color: var(--sec-color);
+}
+
+.signUp:hover {
+  border-bottom: 1px var(--sec-color) solid;
+}
+
+.no-account span {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.msg {
+  text-align: left !important;
+  color: red;
+}

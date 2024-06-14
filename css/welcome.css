@@ -1,0 +1,34 @@
+body {
+  background-color: #24353f;
+}
+
+.navBar h1 {
+  cursor: pointer;
+}
+
+.navBar button {
+  border: 1px solid #ffc107;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #ffc107;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24353f;
+  box-shadow: -5px 2px 40px -5px rgba(0, 0, 0, 1);
+}
+
+.inner {
+  box-shadow: -5px 2px 40px -5px rgba(0, 0, 0, 1);
+}
+
+.inner-img img {
+  height: 150px;
+  object-fit: cover;
+}
